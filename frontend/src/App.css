@@ -1,0 +1,130 @@
+.video-call-container {
+  display: flex;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  position: relative; /* Allow absolute positioning of child elements */
+}
+
+.controls-container {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-right: 20px;
+}
+
+h1 {
+  color: #333;
+}
+
+.action-button,
+.end-call-button,
+.download-button {
+  padding: 6px 12px; /* Increased padding for better clickability */
+  font-size: 14px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 8px 0; /* Increased margin for better spacing */
+  transition: background-color 0.3s;
+  width: 130px; /* Fixed width for buttons */
+}
+
+.action-button {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.action-button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+.end-call-button {
+  background-color: #dc3545;
+  color: #fff;
+  position: absolute; /* Positioning */
+  bottom: 20px; /* Distance from the bottom */
+  right: 20px; /* Distance from the right */
+}
+
+.end-call-button:hover {
+  background-color: #c82333; /* Darker red on hover */
+}
+
+.download-button {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.download-button:hover {
+  background-color: #218838; /* Darker green on hover */
+}
+
+/* Updated styles for input fields */
+.input-field {
+  padding: 6px; /* Reduced padding for smaller input fields */
+  font-size: 12px; /* Reduced font size */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 8px 0; /* Increased margin for spacing */
+  width: 130px; /* Set a fixed width to match button sizes */
+  transition: border-color 0.3s, box-shadow 0.3s; /* Transition for focus */
+}
+
+.input-field:focus {
+  outline: none; /* Remove default outline */
+  border-color: #007bff; /* Change border color on focus */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Add a shadow effect */
+}
+
+/* New styles for the email container */
+.email-container {
+  display: flex;
+  flex-direction: column; /* Stack email input and button vertically */
+  margin-top: auto; /* Pushes this section to the bottom */
+}
+
+.email-container .input-field {
+  margin-bottom: 8px; /* Margin for spacing */
+}
+
+.video-container {
+  flex: 1;
+  padding: 20px; /* Added padding for video container */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 70%; /* Set maximum width to 70% for a medium size */
+  max-height: 70%; /* Set maximum height to 70% for a medium size */
+  border-radius: 8px; /* Add some rounded corners for aesthetics */
+  overflow: hidden; /* Ensure that anything overflowing is hidden */
+}
+
+.remote-video {
+  width: 100%; /* Full width of the container */
+  height: 100%; /* Full height of the container */
+  border-radius: 8px; /* Match container's border radius */
+  object-fit: cover; /* Maintain aspect ratio and cover the entire area */
+  border: 1px solid #ccc; /* Add a border to the video for better visibility */
+}
+
+/* Additional styles for share ID texts */
+.share-id-text {
+  font-size: 20px; /* Larger size for the first text */
+  color: #333; /* Color for the larger text */
+  margin: 10px 0; /* Margin for spacing */
+}
+
+.copy-id-instruction {
+  font-size: 16px; /* Smaller size for the second text */
+  color: #666; /* Color for the smaller text */
+}
+
+.bold {
+  font-weight: bold; /* Bold text */
+}
